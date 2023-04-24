@@ -2,12 +2,25 @@
 # ibm_resource_group
 ######
 
-output "resource_group_ids" {
-  description = "IDs of resource groups"
-  value       = ibm_resource_group.rg.id
+output "id" {
+  description = "The ID of the cos instance"
+  value       = ibm_resource_instance.cos_instance.id
+}
+output "cos_service_name" {
+  description = "The ID of the cos instance"
+  value       = ibm_resource_instance.cos_instance.name
+}
+output "cos_bucket_id" {
+  description = "The ID of the bucket"
+  value       =  ibm_cos_bucket.bucket.id
 }
 
-output "resource_group_names" {
-  description = "Names of resource groups"
-  value       = ibm_resource_group.rg.name
+output "cos_bucket_name" {
+  description = "The name of the bucket"
+  value       = ibm_cos_bucket.bucket.bucket_name
+}
+
+output "cos_bucket_crn" {
+  description = "The crn of the bucket"
+  value       = ibm_cos_bucket.bucket.crn
 }
