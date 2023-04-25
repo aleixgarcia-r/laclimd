@@ -21,5 +21,5 @@ resource "ibm_cos_bucket" "bucket" {
   region_location       = "eu-gb"
   storage_class         = "standard"
   endpoint_type    =  "direct"
-  key_protect           = "crn:v1:bluemix:public:hs-crypto:eu-de:a/375fbdec51d5440c8a88fac2c7845f34:aa8582fe-9172-428e-89c2-ad0f5e534d4d:key:1849f02a-169f-4c51-b79c-db7ba9d8feec"
+  key_protect           = "crn:v1:bluemix:public:hs-crypto:eu-de:a/375fbdec51d5440c8a88fac2c7845f34:aa8582fe-9172-428e-89c2-ad0f5e534d4d:key:ae098827-cede-4f94-8906-7d89ccb36103"
 }
