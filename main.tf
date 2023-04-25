@@ -3,11 +3,11 @@
 ######
 
 resource "ibm_resource_instance" "cos_instance" {
-  name              = "ib-eugb-lond01-cos-poc"
+  name              = var.name
   resource_group_id = "eb8abe4482534833bd6e2a3b1c9222f5"
   service           = "cloud-object-storage"
   plan              = "standard"
-  location          = "eu-gb"
+  location          = "global"
   parameters        = null
   service_endpoints = "private"
 
