@@ -23,3 +23,11 @@ resource "ibm_cos_bucket" "bucket" {
   endpoint_type    =  "direct"
   key_protect           = "crn:v1:bluemix:public:hs-crypto:eu-de:a/375fbdec51d5440c8a88fac2c7845f34:aa8582fe-9172-428e-89c2-ad0f5e534d4d:key:ae098827-cede-4f94-8906-7d89ccb36103"
 }
+resource "ibm_cos_bucket" "bucket1" {
+  bucket_name           = "ib-eude-fra01-bucket01-poc"
+  resource_instance_id  = "6e134ae8-7d7c-4ce2-8d51-acd01b467bcf"
+  region_location       = "eu-de"
+  storage_class         = "standard"
+  endpoint_type    =  "direct"
+  key_protect           = "crn:v1:bluemix:public:hs-crypto:eu-de:a/375fbdec51d5440c8a88fac2c7845f34:aa8582fe-9172-428e-89c2-ad0f5e534d4d:key:ae098827-cede-4f94-8906-7d89ccb36103"
+}
