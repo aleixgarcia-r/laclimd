@@ -25,7 +25,7 @@ resource "ibm_cos_bucket" "bucket" {
 }
 resource "ibm_cos_bucket" "bucket1" {
   bucket_name           = "ib-eude-fra01-bucket01-poc"
-  resource_instance_id  = "6e134ae8-7d7c-4ce2-8d51-acd01b467bcf"
+  resource_instance_id  = "crn:v1:bluemix:public:cloud-object-storage:global:a/135998c33e9848e98013fd33b0164cb8:6e134ae8-7d7c-4ce2-8d51-acd01b467bcf::"
   region_location       = "eu-de"
   storage_class         = "standard"
   endpoint_type    =  "direct"
